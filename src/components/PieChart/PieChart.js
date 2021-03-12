@@ -1,10 +1,9 @@
 import React, { useContext } from 'react'
 import { LayoutContext } from '../../LayoutProvider'
-import { PieChart, Pie, Cell, ResponsiveContainer, Label } from 'recharts';
+import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
-// https://github.com/recharts/recharts/issues/1743
-// https://codesandbox.io/s/jv1o6vjqy5?file=/Hello.js
+
 import './PieChart.scss'
 
 export const Piechart = () => {
