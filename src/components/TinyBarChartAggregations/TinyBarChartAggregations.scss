@@ -1,0 +1,102 @@
+@import '../Navbar/settings.scss';
+
+#tiny__barchart__container {
+    position: absolute;
+    background-color: black;
+    padding-top: 6vh;
+    height: 70vh;
+    height: 79vh !important;
+}
+
+@media screen and (max-height: 823px) and (min-height: 732px) {
+    .tiny__barchart__one__noshow{
+        display: none;
+    }
+    .tiny__barchart__two__noshow{
+        display: none;
+    }
+    .tiny__barchart__three__noshow{
+        display: none;
+    }
+    .tiny__barchart__four__noshow {
+        display: none;
+    }
+    .tiny__barchart__six__noshow{
+        display: none;
+    }
+}
+
+
+// @media screen and (max-height: 731px) and (min-height: 654px) {
+//     .tiny__barchart__one__noshow{
+//         display: none;
+//     }
+//     .tiny__barchart__two__noshow{
+//         display: none;
+//     }
+//     .tiny__barchart__three__noshow{
+//         display: none;
+//     }
+//     .tiny__barchart__five__noshow {
+//         display: none;
+//     }
+//     .tiny__barchart__six__noshow{
+//         display: none;
+//     }
+// }
+
+
+// @media screen and (max-height: 653px) and (min-height: 650px) {
+//     .tiny__barchart__two__noshow{
+//         display: none;
+//     }
+//     .tiny__barchart__three__noshow{
+//         display: none;
+//     }
+//     .tiny__barchart__four__noshow {
+//         display: none;
+//     }
+//     .tiny__barchart__five__noshow {
+//         display: none;
+//     }
+//     .tiny__barchart__six__noshow{
+//         display: none;
+//     }
+// }
+
+// @media screen and (max-height: 649px) and (min-height: 640px) {
+//     .tiny__barchart__one__noshow{
+//         display: none;
+//     }
+//     .tiny__barchart__three__noshow{
+//         display: none;
+//     }
+//     .tiny__barchart__four__noshow {
+//         display: none;
+//     }
+//     .tiny__barchart__five__noshow{
+//         display: none;
+//     }
+//     .tiny__barchart__six__noshow{
+//         display: none;
+//     }
+// }
+
+// @media screen and (max-height: 639px) and (min-height: 568px) {
+//     .tiny__barchart__one__noshow{
+//         display: none;
+//     }
+//     .tiny__barchart__six__noshow{
+//         display: none;
+//     }
+//     .tiny__barchart__three__noshow{
+//         display: none;
+//     }
+//     .tiny__barchart__four__noshow {
+//         display: none;
+//     }
+//     .tiny__barchart__five__noshow{
+//         display: none;
+//     }
+// }
+

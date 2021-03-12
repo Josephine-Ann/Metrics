@@ -1,0 +1,18 @@
+
+#piechart__container {
+    position: absolute;
+    background-color: black;
+    height: 92vh !important;
+}
+
+        #piechart__list  {
+            position: absolute;
+            color: white;
+            display: flex;
+            font-size: 2.5vh;
+            flex-direction: column;
+        }
+
+li {
+    list-style: none;
+}
