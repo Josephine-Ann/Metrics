@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { LayoutContext } from '../../LayoutProvider'
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from 'recharts';
 import './TinyBarChartConnections.scss'
 
 export const TinyBarChartConnections = () => {
