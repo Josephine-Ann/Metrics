@@ -24,10 +24,3 @@ export const TinyBarChartDisconnections = () => {
 
     )
 }
-
-// <BarChart width={600} height={300} data={data}>
-//     <XAxis dataKey="name" tick={renderCustomAxisTick} />
-//     <YAxis />
-//     <Bar dataKey="uv" barSize={30} fill="#8884d8"
-//         label={renderCustomBarLabel} />
-// </BarChart>
