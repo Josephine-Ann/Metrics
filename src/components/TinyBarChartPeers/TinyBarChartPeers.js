@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { LayoutContext } from '../../LayoutProvider'
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from 'recharts';
-import './TinyBarChartPeers.scss'
+import './TinyBarChartPeers.scss';
 
 export const TinyBarChartPeers = () => {
     const {

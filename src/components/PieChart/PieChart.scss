@@ -1,7 +1,7 @@
 .piechart__container {
     position: absolute;
     background-color: black;
-    height: 92vh !important;
+    height: 94vh !important;
 }
 
 #piechart__list  {
@@ -16,7 +16,7 @@ li {
     list-style: none;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
     #piechart__bigger {
         display: none;
     }
@@ -25,11 +25,11 @@ li {
     }
 }
 
-@media screen and (max-width: 540px) and (min-width: 375px) {
+@media screen and (max-width: 540px) and (min-width: 415px) {
     #piechart__bigger {
         display: none;
     }
-    #piechart__medium {
+    #piechart__smaller {
         display: none;
     }
 }

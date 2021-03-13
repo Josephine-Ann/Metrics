@@ -1,11 +1,38 @@
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 540px) and (max-width: 600px){
     #arearesponsive__container {
         background-color: black;
         font-size: 1.5vh;
-        height: 73vh !important;
+        height: 76vh !important;
         padding-top: 9vh;
         width: 100vw !important;
     }
+}
+@media screen and (min-width: 601px) and (max-width: 900px){
+    #arearesponsive__container {
+        background-color: black;
+        font-size: 1.5vh;
+        height: 75vh !important;
+        padding-top: 9vh;
+        width: 100vw !important;
+    }
+}
+@media screen and (min-width: 900px) and (min-height: 1000px){
+    #arearesponsive__container {
+        background-color: black;
+        font-size: 1.5vh;
+        height: 75.5vh !important;
+        padding-top: 9vh;
+        width: 100vw !important;
+    }  
+}
+@media screen and (min-width: 900px) and (max-height: 999px){
+    #arearesponsive__container {
+        background-color: black;
+        font-size: 1.5vh;
+        height: 73.5vh !important;
+        padding-top: 9vh;
+        width: 100vw !important;
+    } 
 }
 @media screen and (max-width: 280px) {
 
@@ -14,14 +41,14 @@
         font-size: 0.8rem;
         height: 74vh !important;
         padding-top: 10vh;
-        width: 95vw !important;
+        width: 100vw !important;
     }
 }
 @media screen and (max-width: 539px) {
     #arearesponsive__container {
         background-color: black;
         font-size: 0.8rem;
-        height: 72vh !important;
+        height: 74vh !important;
         padding-top: 10vh;
         width: 100vw !important;
     }
@@ -33,18 +60,6 @@
 svg {
     height: 100% !important;
 }
-
-// @media screen and (min-height: 641px) and (max-height: 653px){
-//     #arearesponsive__div {
-//         height: 82vh;
-//         width: 95vw;
-//     }
-// }
-
-// moto G4
-// galaxy s5
-// pixel 2
-// iphone 5/6/7/8
 
 @media screen and (max-height: 731px) and (min-width: 281px) {
     #arearesponsive__div {

@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import { LayoutContext } from '../../LayoutProvider'
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from 'recharts';
-import './TinyBarChartAggregations.scss'
 
 export const TinyBarChartAggregations = () => {
     const {

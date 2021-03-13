@@ -47,8 +47,8 @@ export const Layout = () => {
                     <div id={slideIndex === 2 ? "other__layout__panels" : "hide__lower"} className="fade">
                         <div id="other__layout__top-layer-panels">
                             <div className="other__layout__panels__top__left">
-                                <A href="/tinybaraggregations"><FontAwesomeIcon className="layout__icon" icon={faPlus} /></A>
-                                <p className="layout__labels">Aggregations</p>
+                                <A style={{ color: "#5a4343" }} href="/tinybaraggregations"><FontAwesomeIcon className="layout__icon" icon={faPlus} /></A>
+                                <p className="layout__labels__white">Aggregations</p>
                             </div>
                             <div className="other__layout__panels__top__right">
                                 <A href="/tinybarbeacon"><FontAwesomeIcon className="layout__icon" icon={faThLarge} /></A>
@@ -63,8 +63,8 @@ export const Layout = () => {
                                 <p className="layout__labels">Connections</p>
                             </div>
                             <div className="layout__panels__bottom__right">
-                                <A style={{ color: "#5a4343" }} href="/tinybardisconnections"><FontAwesomeIcon className="layout__icon" icon={faBan} /></A>
-                                <p className="layout__labels__white">Disconnections</p>
+                                <A href="/tinybardisconnections"><FontAwesomeIcon className="layout__icon" icon={faBan} /></A>
+                                <p className="layout__labels">Disconnections</p>
                             </div>
                         </div>
                     </div>

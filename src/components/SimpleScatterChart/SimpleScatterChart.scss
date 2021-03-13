@@ -1,9 +1,42 @@
-#simple__scatterchart__container {
-    position: absolute;
-    background-color: black;
-    font-size: 11px !important;
-    padding-top: 10vh;
-    height: 85vh;
-    height: 71vh !important;
-}
+@media screen and (max-width: 539px){
+    #simple__scatterchart__container {
+        position: absolute;
+        background-color: black;
+        font-size: 11px !important;
+        padding-top: 10vh;
+        height: 74vh !important;
+    }
+    }
+    
+    @media screen and (min-width: 540px) and (max-width: 767px){
+        #simple__scatterchart__container {
+            position: absolute;
+            background-color: black;
+            font-size: 11px !important;
+            padding-top: 10vh;
+            height: 72.4vh !important;
+        }
+    }
 
+
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        #simple__scatterchart__container {
+            position: absolute;
+            background-color: black;
+            font-size: 11px !important;
+            padding-top: 10vh;
+            height: 74vh !important;
+        }
+        
+    }
+
+    @media screen and (min-width: 1025px){
+        #simple__scatterchart__container {
+            position: absolute;
+            background-color: black;
+            font-size: 11px !important;
+            padding-top: 10vh;
+            height: 71.2vh !important;
+        }
+                
+    }
