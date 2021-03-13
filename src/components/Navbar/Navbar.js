@@ -19,7 +19,7 @@ export const Navbar = () => {
                     <img id="navbar__sandwich" onClick={() => openMenu()} src={sandwich} alt="sandwich menu icon" />
                 </div>
                 <ul id={open ? "navbar__buttons" : "navbar__closed"}>
-                    <li><A onClick={() => openMenu()} href="/"><img id="navbar__home" src={Home_Icon} /></A></li>
+                    <li><A onClick={() => openMenu()} href="/"><img id="navbar__home" alt="home" src={Home_Icon} /></A></li>
                     <li><A onClick={() => openMenu()} href="/tinybarpeers">Peers Per Country</A></li>
                     <li><A onClick={() => openMenu()} href="/piechart">Peers Per Client</A></li>
                     <li><A onClick={() => openMenu()} href="/simplescatter">Messages Per Minute</A></li>

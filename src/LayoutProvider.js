@@ -62,24 +62,24 @@ export class LayoutProvider extends React.Component {
             }
             client = item.client.toLowerCase()
             if (figures.connections[client]) {
-                figures.connections[client] += item.connections
-                figures.disconnections[client] += item.disconnections
-                figures.time[client] += item.connected_time
-                figures.averageLatency[client] += item.latency
-                figures.beaconBlocks[client] += item.beacon_blocks
+                figures.connections[client] += parseFloat(item.connections)
+                figures.disconnections[client] += parseFloat(item.disconnections)
+                figures.time[client] += parseFloat(item.connected_time)
+                figures.averageLatency[client] += parseFloat(item.latency)
+                figures.beaconBlocks[client] += parseFloat(item.beacon_blocks)
                 figures.quantityClients[client] += 1
-                figures.beaconBlocksAggregations[client] += item.beacon_aggregations
+                figures.beaconBlocksAggregations[client] += parseFloat(item.beacon_aggregations)
             } else {
                 this.setState({
                     allClients: item.client
                 })
-                figures.connections[client] = item.connections || 0
-                figures.disconnections[client] = item.disconnections || 0
-                figures.time[client] = item.connected_time || 0
-                figures.averageLatency[client] = item.averageLatency || 0
-                figures.beaconBlocks[client] = item.beacon_blocks || 0
+                figures.connections[client] = parseFloat(item.connections) || 0
+                figures.disconnections[client] = parseFloat(item.disconnections) || 0
+                figures.time[client] = parseFloat(item.connected_time) || 0
+                figures.averageLatency[client] = parseFloat(item.latency) || 0
+                figures.beaconBlocks[client] = parseFloat(item.beacon_blocks) || 0
                 figures.quantityClients[client] = 1
-                figures.beaconBlocksAggregations[client] = item.beacon_aggregations || 0
+                figures.beaconBlocksAggregations[client] = parseFloat(item.beacon_aggregations) || 0
             }
             index++
         })
@@ -127,6 +127,7 @@ export class LayoutProvider extends React.Component {
             })
             figures.disconnections[property] = figures.disconnections[property] / figures.quantityClients[property]
         }
+        console.log(figures.time)
         for (const property in figures.time) {
             let figure = (property[0]).toUpperCase() + property.slice(1, property.length)
             areas.push({
@@ -180,10 +181,6 @@ export class LayoutProvider extends React.Component {
                 slideIndex: (this.state.slideIndex + quantity)
             })
         }
-    }
-
-    renderPie = async ({ name }) => {
-
     }
 
 
