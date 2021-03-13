@@ -40,18 +40,10 @@ export class LayoutProvider extends React.Component {
             quantityClients: {},
             quantityClientsPercentage: {},
         }
-        let aggregations = []
-        let averageMessages = []
-        let scatter = []
-        let data = []
-        let beaconData = []
-        let totalClients = 0
-        let countryData = []
         let client = ""
-        let areas = []
         let index = 0
-        let connections = []
-        let disconnections = []
+        let scatter = []
+        let totalClients = 0
         metricsData.map((item) => {
             scatter.push({ x: item.connected_time, y: item.total_messages, z: index })
             totalClients += 1
@@ -83,7 +75,9 @@ export class LayoutProvider extends React.Component {
             }
             index++
         })
+
         let country = ""
+        let countryData = []
         for (const property in clientsInCountries[0]) {
             country = property[0].toUpperCase() + property.slice(1, property.length)
             if (countryData.length !== 8) {
@@ -93,6 +87,7 @@ export class LayoutProvider extends React.Component {
                 })
             }
         }
+        let beaconData = []
         for (const property in figures.beaconBlocks) {
             let figure = (property[0]).toUpperCase() + property.slice(1, property.length)
             beaconData.push({
@@ -101,6 +96,7 @@ export class LayoutProvider extends React.Component {
                 scatterData: scatter
             })
         }
+        let aggregations = []
         for (const property in figures.beaconBlocksAggregations) {
             let figure = (property[0]).toUpperCase() + property.slice(1, property.length)
             aggregations.push({
@@ -111,6 +107,7 @@ export class LayoutProvider extends React.Component {
         for (const property in figures.averageLatency) {
             figures.averageLatency[property] = figures.averageLatency[property] / figures.quantityClients[property]
         }
+        let connections = []
         for (const property in figures.connections) {
             let figure = (property[0]).toUpperCase() + property.slice(1, property.length)
             connections.push({
@@ -119,6 +116,7 @@ export class LayoutProvider extends React.Component {
             })
             figures.connections[property] = figures.connections[property] / figures.quantityClients[property]
         }
+        let disconnections = []
         for (const property in figures.disconnections) {
             let figure = (property[0]).toUpperCase() + property.slice(1, property.length)
             disconnections.push({
@@ -127,7 +125,7 @@ export class LayoutProvider extends React.Component {
             })
             figures.disconnections[property] = figures.disconnections[property] / figures.quantityClients[property]
         }
-        console.log(figures.time)
+        let areas = []
         for (const property in figures.time) {
             let figure = (property[0]).toUpperCase() + property.slice(1, property.length)
             areas.push({
@@ -136,10 +134,12 @@ export class LayoutProvider extends React.Component {
             })
             figures.time[property] = figures.time[property] / figures.quantityClients[property]
         }
+        let data = []
         for (const property in figures.quantityClients) {
             figures.quantityClientsPercentage[property] = parseFloat((figures.quantityClients[property] * (100 / totalClients)).toFixed(2))
             data.push({ name: property, value: parseFloat((figures.quantityClients[property] * (100 / totalClients)).toFixed(2)) })
         }
+        let averageMessages = []
         for (const property in figures.beaconBlocks) {
             averageMessages.push({
                 name: property,
@@ -176,7 +176,7 @@ export class LayoutProvider extends React.Component {
     }
 
     plusSlides = async (quantity) => {
-        if (quantity > 0 && this.state.slideIndex < 2 || quantity < 0 && this.state.slideIndex > 1) {
+        if (this.state.slideIndex + quantity > 0 && this.state.slideIndex + quantity < 3) {
             this.setState({
                 slideIndex: (this.state.slideIndex + quantity)
             })
