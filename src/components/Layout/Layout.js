@@ -30,8 +30,8 @@ export const Layout = () => {
                                 <A style={{ color: "#5a4343" }} href="/simplescatter"><FontAwesomeIcon className="layout__icon" icon={faCommentAlt} /></A>
                                 <p className="layout__labels__white">Messages Per Minute</p>
                             </div>
-                            <a className={slideIndex === 1 ? "layout__arrows prev" : "prev"} onClick={() => plusSlides(-1)}>&#10094;</a>
-                            <a className={slideIndex === 2 ? "layout__arrows next" : "next"} onClick={() => plusSlides(+1)}>&#10095;</a>
+                            <p className={slideIndex === 1 ? "layout__arrows prev" : "prev"} onClick={() => plusSlides(-1)}>&#10094;</p>
+                            <p className={slideIndex === 2 ? "layout__arrows next" : "next"} onClick={() => plusSlides(+1)}>&#10095;</p>
                         </div>
                         <div id="layout__bottom-layer-panels">
                             <div className="layout__panels__bottom__left">
@@ -47,15 +47,15 @@ export const Layout = () => {
                     <div id={slideIndex === 2 ? "other__layout__panels" : "hide__lower"} className="fade">
                         <div id="other__layout__top-layer-panels">
                             <div className="other__layout__panels__top__left">
-                                <A style={{ color: "#5a4343" }} href="/tinybaraggregations"><FontAwesomeIcon className="layout__icon" icon={faPlus} /></A>
-                                <p className="layout__labels__white">Aggregations</p>
+                                <A href="/tinybaraggregations"><FontAwesomeIcon className="layout__icon" icon={faPlus} /></A>
+                                <p className="layout__labels">Aggregations</p>
                             </div>
                             <div className="other__layout__panels__top__right">
                                 <A href="/tinybarbeacon"><FontAwesomeIcon className="layout__icon" icon={faThLarge} /></A>
                                 <p className="layout__labels">Average Messages</p>
                             </div>
-                            <a className={slideIndex === 1 ? "layout__arrows prev-sec" : "prev-sec"} onClick={() => plusSlides(-1)}>&#10094;</a>
-                            <a className={slideIndex === 2 ? "layout__arrows next" : "next"} onClick={() => plusSlides(+1)}>&#10095;</a>
+                            <p className={slideIndex === 1 ? "layout__arrows prev-sec" : "prev-sec"} onClick={() => plusSlides(-1)}>&#10094;</p>
+                            <p className={slideIndex === 2 ? "layout__arrows next" : "next"} onClick={() => plusSlides(+1)}>&#10095;</p>
                         </div>
                         <div id="layout__bottom-layer-panels">
                             <div className="other__layout__panels__bottom__left">
@@ -63,8 +63,8 @@ export const Layout = () => {
                                 <p className="layout__labels">Connections</p>
                             </div>
                             <div className="layout__panels__bottom__right">
-                                <A href="/tinybardisconnections"><FontAwesomeIcon className="layout__icon" icon={faBan} /></A>
-                                <p className="layout__labels">Disconnections</p>
+                                <A style={{ color: "#5a4343" }} href="/tinybardisconnections"><FontAwesomeIcon className="layout__icon" icon={faBan} /></A>
+                                <p className="layout__labels__white">Disconnections</p>
                             </div>
                         </div>
                     </div>

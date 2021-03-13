@@ -148,7 +148,6 @@ export class LayoutProvider extends React.Component {
             figures.beaconBlocksAverage[property] = figures.beaconBlocks[property] / figures.quantityClients[property]
         }
 
-
         this.setState({
             info: figures,
             countryData: clientsInCountries,

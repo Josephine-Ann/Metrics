@@ -32,7 +32,8 @@
 }
 @media screen and (min-width: 768px) {
     a {
-        margin-top: 7.5vh;
+        margin-top: 9.5vh;
+        margin-left: 1.4vw;
     }
     #layout__planet {
         background-image: linear-gradient(
@@ -120,6 +121,7 @@
         align-items: center;
         font-size: 1rem;
         color: white !important;
+        justify-content: end;
     }
     .layout__panels__top__left {
         background-color: #d7d7e6;
@@ -131,22 +133,23 @@
         font-size: 1rem;
     }
     .other__layout__panels__top__left {
-        background-color: white;
+        background-color: #5a4343;
         width: 21vw;
         color: #5a4343;
         display: flex;
         flex-direction: column;
         align-items: center;
         font-size: 1rem;
+        justify-content: end;
     }
     .layout__panels__bottom__right {
-        background-color: #3d3434;
+        background-color: #a89595;
         width: 25vw;
-        color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
         font-size: 1rem;
+        justify-content: end;
     }
     .layout__panels__bottom__left {
         background-color: #68687b;
@@ -165,6 +168,7 @@
         flex-direction: column;
         align-items: center;
         font-size: 1rem;
+        justify-content: end;
     }
     .layout__labels__white {
         position: absolute;
@@ -470,7 +474,7 @@
     margin-top: 40vh;
     margin-left: 1.3vw;
     position: absolute;
-    color: #5a4343;
+    color: white;
 }
 }
 @media screen and (min-width: 540px) and (max-width: 767px) {

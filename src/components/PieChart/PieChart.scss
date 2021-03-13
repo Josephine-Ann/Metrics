@@ -1,4 +1,4 @@
-#piechart__container {
+.piechart__container {
     position: absolute;
     background-color: black;
     height: 92vh !important;
@@ -14,4 +14,40 @@
 
 li {
     list-style: none;
+}
+
+@media screen and (max-width: 375px) {
+    #piechart__bigger {
+        display: none;
+    }
+    #piechart__medium {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 540px) and (min-width: 375px) {
+    #piechart__bigger {
+        display: none;
+    }
+    #piechart__medium {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    #piechart__smaller {
+        display: none;
+    }
+    #piechart__medium {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 540px) and (max-width: 766px) {
+    #piechart__smaller {
+        display: none;
+    }
+    #piechart__bigger {
+        display: none;
+    }
 }

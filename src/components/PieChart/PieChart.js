@@ -17,7 +17,7 @@ export const Piechart = () => {
 
     return (
         <div>
-            <ResponsiveContainer id="piechart__container" width="100%" height="100%">
+            <ResponsiveContainer id="piechart__smaller" className="piechart__container" width="100%" height="100%">
                 <PieChart width={800} height={800}>
                     <Pie
                         data={data}
@@ -26,6 +26,42 @@ export const Piechart = () => {
                         labelLine={false}
                         label={renderCustomizedLabel}
                         outerRadius={100}
+                        fill="#8884d8"
+                        dataKey="value"
+                    >
+                        {data.map((entry, index) => (
+                            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                        ))}
+                    </Pie>
+                </PieChart>
+            </ResponsiveContainer>
+            <ResponsiveContainer id="piechart__bigger" className="piechart__container" width="100%" height="100%">
+                <PieChart width={800} height={800}>
+                    <Pie
+                        data={data}
+                        cx="50%"
+                        cy="50%"
+                        labelLine={false}
+                        label={renderCustomizedLabel}
+                        outerRadius={250}
+                        fill="#8884d8"
+                        dataKey="value"
+                    >
+                        {data.map((entry, index) => (
+                            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                        ))}
+                    </Pie>
+                </PieChart>
+            </ResponsiveContainer>
+            <ResponsiveContainer id="piechart__medium" className="piechart__container" width="100%" height="100%">
+                <PieChart width={800} height={800}>
+                    <Pie
+                        data={data}
+                        cx="50%"
+                        cy="50%"
+                        labelLine={false}
+                        label={renderCustomizedLabel}
+                        outerRadius={210}
                         fill="#8884d8"
                         dataKey="value"
                     >
