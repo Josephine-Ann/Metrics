@@ -23,8 +23,8 @@ export const SimpleScatterChart = () => {
                 }}
             >
                 <CartesianGrid />
-                <XAxis type="number" dataKey="x" name="stature" unit="T" />
-                <YAxis type="number" dataKey="y" name="weight" unit="M" />
+                <XAxis type="number" dataKey="x" name="stature" unit="min" />
+                <YAxis type="number" dataKey="y" name="weight" unit="b" />
                 <Tooltip cursor={{ strokeDasharray: '3 3' }} />
                 <Scatter name="A school" data={scatterData} fill="#8884d8" />
             </ScatterChart>
