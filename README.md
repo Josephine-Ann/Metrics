@@ -1,4 +1,4 @@
 ### To run
-yarn build 
+yarn start 
 
 
