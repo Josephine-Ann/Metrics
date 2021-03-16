@@ -598,15 +598,10 @@ a {
         width: 100vw;
         height: 29vh;
     }
-    #layout__bottom-layer-panels {
+    #layout__bottom-layer-panels, #other__layout__bottom-layer-panels {
         display: flex;
         width: 100vw;
-        height: 33vh;
-    }
-    #other__layout__bottom-layer-panels {
-        display: flex;
-        width: 100vw;
-        height: 33vh;
+        height: 35vh;
     }
     #layout__mid-layer-panels {
         height: 50%;
